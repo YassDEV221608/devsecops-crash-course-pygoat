@@ -17,7 +17,7 @@ print(data + stderr)
 '''
 import yaml, subprocess
 stream = open('/home/fox/test.yaml', 'r')
-data = yaml.load(stream)
+data = yaml.safe_load(stream)
 
 '''
 stdout, stderr = data.communicate()
